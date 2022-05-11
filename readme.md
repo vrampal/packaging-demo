@@ -29,3 +29,7 @@ Setup GraalVM as per: https://www.graalvm.org/java/quickstart/
 mvn -Pnative clean verify
 
 target/packaging-demo [UserDefinedContent]
+
+## SBOM generation
+
+mvn org.cyclonedx:cyclonedx-maven-plugin:2.6.2:makeAggregateBom
